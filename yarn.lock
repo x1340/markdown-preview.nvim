@@ -3589,6 +3589,11 @@ markdown-it-footnote@^3.0.1:
   resolved "https://registry.yarnpkg.com/markdown-it-footnote/-/markdown-it-footnote-3.0.3.tgz#e0e4c0d67390a4c5f0c75f73be605c7c190ca4d8"
   integrity sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==
 
+markdown-it-obsidian-callouts@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/markdown-it-obsidian-callouts/-/markdown-it-obsidian-callouts-0.3.2.tgz#165fcbc806c83469187d58261da36fc42f07a518"
+  integrity sha512-YfvKgXJvqfXYqHIkQhQsDe/QzOdndhCkttqokPoZUEqUrzmumbUsUAUmyheV/igJFGwwsnE7h2UMIAKcdrLbrg==
+
 markdown-it-task-lists@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/markdown-it-task-lists/-/markdown-it-task-lists-2.1.1.tgz#f68f4d2ac2bad5a2c373ba93081a1a6848417088"
