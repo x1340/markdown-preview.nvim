@@ -168,6 +168,10 @@ let g:mkdp_open_ip = ''
 " default: ''
 let g:mkdp_browser = ''
 
+" set to 1 to keep preview open even after vim/nvim closed.
+" default is 0
+let g:mkdp_keep_preview = 0
+
 " set to 1, echo preview page URL in command line when opening preview page
 " default is 0
 let g:mkdp_echo_preview_url = 0

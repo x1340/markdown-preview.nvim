@@ -67,21 +67,21 @@ function! mkdp#rpc#stop_server() abort
     if s:mkdp_channel_id !=# v:null
       let l:status = job_status(s:mkdp_channel_id)
       if l:status ==# 'run'
-        call mkdp#rpc#request(s:mkdp_channel_id, 'close_all_pages')
-        try
-          call job_stop(s:mkdp_channel_id)
-        catch /.*/
-        endtry
+          call mkdp#rpc#request(s:mkdp_channel_id, 'close_all_pages')
+          try
+            call job_stop(s:mkdp_channel_id)
+          catch /.*/
+            endtry
       endif
     endif
     let s:mkdp_channel_id = v:null
   else
     if s:mkdp_channel_id !=# -1
       call rpcrequest(s:mkdp_channel_id, 'close_all_pages')
-      try
-        call jobstop(s:mkdp_channel_id)
-      catch /.*/
-      endtry
+        try
+          call jobstop(s:mkdp_channel_id)
+        catch /.*/
+          endtry
     endif
     let s:mkdp_channel_id = -1
   endif

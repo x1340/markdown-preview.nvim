@@ -56,6 +56,11 @@ if !exists('g:mkdp_browser')
   let g:mkdp_browser = ''
 endif
 
+" set to 1, keep preview open even after vim closed.
+if !exists('g:mkdp_keep_preview')
+  let g:mkdp_keep_preview = 0
+endif
+
 if !exists('g:mkdp_preview_options')
   let g:mkdp_preview_options = {
       \ 'mkit': {},
